@@ -1,0 +1,104 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color:hwb(182 13% 51%);
+    padding: 15px; 
+}
+.ima{
+    border-radius: 15px;
+    width: 90px
+}
+.ima1{
+    width: 390px;
+    height: 70px;
+    margin-left:380px;
+}
+
+
+
+.company-name {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #444;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav h1 {
+    flex: 1;
+  
+    font-weight: 400;
+    font-style: normal;
+    text-align: center; 
+    
+    margin-left: 300px; 
+}
+
+.nav ul {
+    list-style-type: none; 
+    padding: 10px; 
+    margin: 0; 
+    display: flex; 
+}
+
+.nav ul li {
+    margin: 0 15px; 
+}
+
+.nav ul li a {
+    color: white; 
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s; 
+}
+
+.nav ul li a:hover {
+    color: #217b7e; 
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; 
+        align-items: flex-start;
+        padding: 10px; 
+    }
+    .ima1{
+      margin-left: 30px;
+    }
+    
+
+    .nav h1 {
+        margin-left: 0;
+        margin-bottom: 10px; 
+    }
+
+    .nav ul {
+        flex-direction: column; 
+        width: 100%; 
+        align-items: center; 
+        padding: 0;
+    }
+
+    .nav ul li {
+        margin: 5px 0; 
+    }
+
+    .nav ul li a {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+}

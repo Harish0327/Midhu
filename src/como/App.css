@@ -1,0 +1,52 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    font-family: Arial, sans-serif;
+}
+
+
+section {
+    padding: 50px 20px;
+    margin: 20px 0;
+}
+
+#home-section {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+#products-section {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#about-us-section {
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+#contact-section {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+
+section + section {
+    margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+    section {
+        padding: 30px 10px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}

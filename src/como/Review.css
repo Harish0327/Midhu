@@ -1,0 +1,63 @@
+.review-section {
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    background-color: white;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.review {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%; 
+    margin-bottom: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.review h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.review .location, .review .date {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.stars {
+    font-size: 1.5rem;
+    color: gold;
+}
+
+.review .text {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+
+.product-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.product-list {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 10px;
+}

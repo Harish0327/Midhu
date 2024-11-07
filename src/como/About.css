@@ -1,0 +1,85 @@
+.about-us {
+    margin-top: 10px;
+    padding: 20px;
+    overflow: hidden;
+    font-family: Arial, sans-serif; 
+}
+
+.about-us h2 {
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Animation for the heading */
+}
+
+.about-us p {
+    opacity: 0; /* Start hidden for the fade-in effect */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply fade-in animation */
+    animation-delay: 0.5s; /* Delay for the paragraph */
+    margin-bottom: 20px; /* Spacing below the paragraph */
+}
+
+.factsheet-table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 5px; 
+}
+
+.factsheet-table th, .factsheet-table td {
+    border: 1px solid #dddddd; 
+    text-align: left; 
+    padding: 8px; 
+}
+
+.factsheet-table th {
+    background-color: #f2f2f2; 
+}
+
+.factsheet-table tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+.factsheet-table tr:hover {
+    background-color: #f1f1f1; 
+}
+
+.trust-seal {
+    margin-left: auto;
+    margin-right: auto; /* Center the trust seal */
+    display: block; /* Make it a block element for centering */
+    position: relative;
+    bottom: 40px;
+}
+
+.reviews-section {
+    margin-top: 40px;
+}
+
+.reviews-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-us {
+        padding: 15px; /* Reduced padding on smaller screens */
+    }
+
+    .factsheet-table th, .factsheet-table td {
+        padding: 5px; /* Adjust padding for table cells */
+    }
+
+    .reviews-section h2 {
+        font-size: 1.5rem; /* Smaller font size for headings */
+    }
+}

@@ -1,0 +1,62 @@
+/* Header.css */
+
+header {
+  background-color: #4CAF50; /* Green background */
+  padding: 15px; /* Padding for the header */
+  text-align: center; /* Centered text */
+}
+
+h1 {
+  color: white; /* White text color */
+  margin: 0; /* Remove default margin */
+}
+
+nav {
+  margin-top: 10px; /* Space between heading and nav */
+}
+
+nav ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+  display: inline; /* Inline list items */
+  margin: 0 15px; /* Space between links */
+}
+
+nav ul li a {
+  color: white; /* White link color */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Bold links */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+  color: #FFD700; /* Gold color on hover */
+}
+/* App.css */
+
+.app {
+  background-image: url('src/assets/images/midhu-industries-90x90.jpg'); /* Use your image path */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  min-height: 100vh; /* Ensure it covers at least the full viewport height */
+  display: flex; /* Flexbox for vertical layout */
+  flex-direction: column; /* Stack children vertically */
+}
+
+.nav {
+  padding: 15px; /* Add padding for nav */
+  color: white; /* White text color for links */
+  display: flex;
+  justify-content: space-between; /* Space between h1 and ul */
+  align-items: center; /* Center items vertically */
+  z-index: 1; /* Ensure nav is above background */
+}
+
+.home {
+  padding: 20px; /* Add padding for home content */
+  color: black; /* Default text color for home */
+  z-index: 1; /* Ensure home content is above background */
+}
