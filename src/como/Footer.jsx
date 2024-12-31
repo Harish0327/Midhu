@@ -9,19 +9,19 @@ const Footer = () => {
             <div className="footer-content">
                 <p className="address">
                     S.F. No. 363, Bharath Nagar, Neelikonampalayam Post, <br />
-                    Uppilipalayam, Coimbatore-641033, Tamil Nadu, India
+                     Coimbatore-641033, Tamil Nadu, India
                 </p>
                 <div className="social-media">
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/profile.php?id=61567910507185" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faFacebookF} className="social-icon" />
                     </a>
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/midhuindustries/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faInstagram} className="social-icon" />
                     </a>
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/midhu-industries-06b835337/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faLinkedinIn} className="social-icon" />
                     </a>
-                    <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                    <a href="https://x.com/MidhuI79631" target="_blank" rel="noopener noreferrer" className="social-icon">
                         {/* X logo SVG */}
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" 
@@ -35,7 +35,7 @@ const Footer = () => {
                     </a>
                 </div> <br />
                 <p>&copy; {new Date().getFullYear()} Midhu Industries. All rights reserved.</p>
-                <p>&copy; {new Date().getFullYear()} Million Dreams. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()}   Million Dream . All rights reserved.</p>
             </div>
         </footer>
     );

@@ -3,70 +3,120 @@ import './Product.css';
 import { FaWhatsapp } from 'react-icons/fa';
 import ContactButton from './ContactButton';
 
+import impellerImage from '../assets/images/vet/2Impeller.jpg';
+import chamberImage from '../assets/images/vet/2Chamber.jpg';
+import bearingChamberImage from '../assets/images/vet/2Bearing Chamber.jpg';
+import bottomChamberImage from '../assets/images/vet/2Bottom Chamber.jpg';
+
+
+
+import Impller from "../assets/images/vet/3Impeller.jpg"
+import Chamber3 from'../assets/images/vet/3Chamber.jpg';
+import bearingChamberImage3 from '../assets/images/vet/3Bearing Chamber.jpg';
+import bottomChamberImage3 from '../assets/images/vet/3Bottom Chamber.jpg';
+
+import Impller4 from '../assets/images/vet/4Impeller.jpg'
+import chamber4 from '../assets/images/vet/4Chamber.jpg';
+import bearingchamber4 from '../assets/images/vet/4Bearing Chamber.jpg';
+import bottomchamber4 from'../assets/images/vet/4Bottom Chamber.jpg';
+
+import Impller5 from '../assets/images/vet/5Impeller.jpg';
+import chamber5 from '../assets/images/vet/5Chamber.jpg';
+import bearingchamber5 from '../assets/images/vet/5Bearing Chamber.jpg';
+import bottomchamber5 from'../assets/images/vet/5Bottom Chamber.jpg';
+
+import chamberstack2 from '../assets/images/vet/2 seriesChamp.jpg';
+import chamberstack4 from '../assets/images/vet/4 SeriesChamp.jpg';
+
+import coupling from '../assets/images/vet/Coupling.jpg';
+import pumpSpare2 from '../assets/images/vet/Lock Washer.jpg';
+import pumpSpare3 from '../assets/images/vet/Mechanical Seal.jpg';
+import pumpSpare4 from '../assets/images/vet/Pump Shafts.jpg';
+import pumpSpare5 from '../assets/images/vet/Sleeves.jpg';
+import pumpSpare6 from '../assets/images/vet/Top Chamber.jpg';
+import pumpSpare7 from '../assets/images/vet/TC Bushes.jpg';
+
+import fourimp2 from '../assets/images/four/2Impeller.jpg';
+import fourcham2 from '../assets/images/four/2Chamber.jpg';
+import fourbottom2 from '../assets/images/four/2Bottom Chamber.jpg';
+
+import fourimp3 from '../assets/images/four/3Impeller.jpg';
+import fourcham3 from '../assets/images/four/3Chamber.jpg';
+import fourbottom3 from '../assets/images/four/3Bottom Chamber.jpg';
+
+import fourimp5 from '../assets/images/four/5Impeller.jpg';
+import fourcham5 from '../assets/images/four/5Chamber.jpg';
+import fourbottom5 from '../assets/images/four/5Bottom Chamber.jpg';
+
+
 const productsData = {
     "Vertical Inline Pump Spares": {
         "2 Series": [
-            { id: '2SeriesProduct1', name: '2 Series - Bearing Chamber', image: 'src/assets/images/vet/2Series - Bearing Chamber (2).png', description: 'Durable bearing chamber designed to enhance pump efficiency and longevity. Made from premium stainless steel to resist wear and corrosion', rating: 4.5 },
-            { id: '2SeriesProduct2', name: '2 Series - Bottom Chamber', image: 'src/assets/images/vet/2Series - Bottom Chamber.png', description: 'Robust bottom chamber engineered for stability and optimal flow. Crafted from high-grade stainless steel to withstand high pressure and corrosion', rating: 4.3 },
-            { id: '2SeriesProduct3', name: '2 Series - Chamber', image: 'src/assets/images/vet/2Series - Chamber.png', description: 'Durable and efficient chamber designed for seamless fluid transfer. Built with precision to enhance pump performance and longevity', rating: 4.7 },
-            { id: '2SeriesProduct4', name: '2 Series - Impeller ', image: 'src/assets/images/vet/2Series - Impeller (3).png', description: 'High-performance impeller crafted for optimal fluid flow and pressure control. Made with quality materials to ensure durability and efficiency in pump systems', rating: 4.6 }
+            { id: '2SeriesProduct4', name: '2 Series - Impeller', image: impellerImage, description: [' - Material: SS304( SS316 On request)',<br/> ,'- Suitable for: Double D,Spline,Hex shafts' , <br/> ,'- Outer dia : 90mm',<br/>,'- Rated flow : 2m3/Hr'], rating: 4.7 },
+            { id: '2SeriesProduct3', name: '2 Series - Chamber', image: chamberImage, description:  ['- Material: SS304/PTFE',<br/> ,'- Length :  18mm' , <br/> ,'- Outer Dia : 110mm'], rating: 4.6 },
+            { id: '2SeriesProduct1', name: '2 Series - Bearing Chamber', image: bearingChamberImage, description: ['- Material : SS304/PTFE',<br/> ,'- Bush : Sic / TC' , <br/> ,'- Inner Dia:  16mm/ 17.5mm'], rating: 4.5 },
+            { id: '2SeriesProduct2', name: '2 Series - Bottom Chamber', image:  bottomChamberImage, description: [' - Material: SS304/PTFE',<br/> ,'- Suitable for: MVC2 , CR2 , CDL2' , <br/> ,'- Outer Dia : 110mm'], rating: 4.3 },
+          
+            
         ],
         "3 Series": [
-            { id: '3SeriesProduct1', name: '3 Series - Bearing Chamber ', image: 'src/assets/images/vet/3Series - Bearing Chamber (2).png', description: 'Engineered for precision and longevity, this bearing chamber minimizes friction for enhanced performance. Its robust design ensures reliable operation in demanding conditions', rating: 4.4 },
-            { id: '3SeriesProduct2', name: '3 Series - Bottom Chamber', image: 'src/assets/images/vet/3Series - Bottom Chamber.png', description: 'Designed to provide optimal fluid flow, this bottom chamber enhances pump efficiency. Its durable construction withstands high-pressure applications for long-lasting performance', rating: 4.2 },
-            { id: '3SeriesProduct3', name: '3 Series - Chamber', image: 'src/assets/images/vet/3Series - Chamber.png', description: 'This versatile chamber offers reliable sealing and support for various pump models. Its innovative design reduces wear, ensuring consistent operation and extended lifespan', rating: 4.8 },
-            { id: '3SeriesProduct4', name: '3 Series - Impeller', image: 'src/assets/images/vet/3Series - Impeller (2).png', description: 'The impeller is crafted for maximum hydraulic performance, promoting efficient fluid movement. Its lightweight design and sturdy materials make it ideal for high-speed applications', rating: 4.9 }
+            { id: '3SeriesProduct1', name: '3 Series - Bearing Chamber', image: bearingChamberImage3, description: ['-  Material: SS304( SS316 On request)',<br/> ,'- Suitable for:  Double D, Spline  ' , <br/> ,'- 	Outer dia : 73mm',<br/>,'- 	Rated flow : 3m3/Hr'], rating: 4.5 },
+            { id: '3SeriesProduct2', name: '3 Series - Bottom Chamber', image: bottomChamberImage3, description: ['- Material: SS304/PTFE',<br/> ,'- Length :  18mm' , <br/> ,'- Outer Dia : 110mm'], rating: 4.3 },
+            { id: '3SeriesProduct3', name: '3 Series - Chamber', image: Chamber3, description: ['- Material : SS304/PTFE',<br/> ,'- Bush : Sic / TC' , <br/> ,'- Inner dia:  16mm/ 17.5mm'], rating: 4.6 },
+            { id: '3SeriesProduct4', name: '3 Series - Impeller', image: Impller, description: ['- 	Material: SS304/PTFE',<br/> ,'- Suitable for: MVC3 , CR3 , CDL3' , <br/> ,'- Outer Dia : 110mm'], rating: 4.7 },
         ],
         "4 Series": [
-            { id: '3SeriesProduct1', name: '4 Series - Bearing Chamber', image: 'src/assets/images/vet/4Series - Bearing Chamber (2).png', description: 'This bearing chamber is engineered for stability and precision, ensuring smooth rotation and minimal friction. Its robust design prolongs the life of your pump while enhancing overall efficiency', rating: 4.4 },
-            { id: '3SeriesProduct2', name: '4 Series - Bottom Chamber', image: 'src/assets/images/vet/4Series - Bottom Chamber.png', description: 'Designed for superior fluid handling, this bottom chamber optimizes pump performance and reduces cavitation. Its durable materials ensure reliability even in demanding environments', rating: 4.2 },
-            { id: '3SeriesProduct3', name: '4 Series - Chamber', image: 'src/assets/images/vet/4Series - Chamber.png', description: 'This chamber is built for versatility, accommodating various pump configurations with ease. Its innovative design minimizes leakage and maximizes efficiency for long-term reliability', rating: 4.8 },
-            { id: '3SeriesProduct4', name: '4 Series - Impeller', image: 'src/assets/images/vet/4Series - Impeller (3).png', description: 'The impeller features advanced geometry for improved flow dynamics, resulting in higher efficiency. Made from high-quality materials, it ensures durability and optimal performance in various applications', rating: 4.9 }
+            { id: '4SeriesProduct1', name: '4 Series - Bearing Chamber', image:  bearingchamber4, description: ['- Material: SS304( SS316 On request)',<br/> ,'- Suitable for:  Double D, Spline , Hex  ' , <br/> ,'- Outer dia : 95mm',<br/>,'- Rated flow : 4m3/Hr'],  rating: 4.5 },
+            { id: '4SeriesProduct2', name: '4 Series - Bottom Chamber', image: bottomchamber4, description: ['- Material: SS304/PTFE',<br/> ,'- Length :  27mm' , <br/> ,'- Outer Dia : 110mm'] , rating: 4.3 },
+            { id: '4SeriesProduct3', name: '4 Series - Chamber', image: chamber4, description: ['- 	Material : SS304/PTFE',<br/> ,'- Bush : Sic / TC' , <br/> ,'- Inner dia:  16mm/ 17.5mm'], rating: 4.6 },
+            { id: '4SeriesProduct4', name: '4 Series - Impeller', image: Impller4 , description:  ['- Material: SS304/PTFE',<br/> ,'- Suitable for: MVC4 , CR4 , CDL4' , <br/> ,'- Outer Dia : 110mm'], rating: 4.7 },
         ],
         "5 Series": [
-            { id: '3SeriesProduct1', name: '5 Series - Bearing Chamber', image: 'src/assets/images/vet/5Series - Bearing Chamber (2).png', description: 'This bearing chamber offers enhanced durability and precision, ensuring seamless operation in high-performance applications. Its design minimizes wear and tear, extending the service life of your equipment', rating: 4.4 },
-            { id: '3SeriesProduct2', name: '5 Series - Bottom Chamber', image: 'src/assets/images/vet/5Series - Bottom Chamber.png', description: 'Engineered for optimal fluid flow, this bottom chamber reduces turbulence and enhances efficiency. Its robust construction withstands the toughest conditions, making it ideal for demanding operations', rating: 4.2 },
-            { id: '3SeriesProduct3', name: '5 Series - Chamber', image: 'src/assets/images/vet/5Series - Chamber.png', description: 'This versatile chamber is designed to accommodate a range of pumping needs, maximizing performance and efficiency. Its leak-proof design ensures reliable operation across various applications', rating: 4.8 },
-            { id: '3SeriesProduct4', name: '5 Series - Impeller ', image: 'src/assets/images/vet/5Series - Impeller (2).png', description: 'The impeller features a state-of-the-art design that enhances hydraulic performance and flow rates. Crafted from durable materials, it guarantees consistent performance and longevity in all environments', rating: 4.9 }
+            { id: '5SeriesProduct1', name: '5 Series - Bearing Chamber', image: bearingchamber5, description: ['- Material: SS304( SS316 On request)',<br/> ,'- Suitable for:  Double D, Spline    ' , <br/> ,'- Outer dia : 73mm',<br/>,'- Rated flow : 5m3/Hr'], rating: 4.5 },
+            { id: '5SeriesProduct2', name: '5 Series - Bottom Chamber', image:bottomchamber5, description: ['- Material: SS304/PTFE',<br/> ,'- Length :  27mm' , <br/> ,'- Outer Dia : 110mm '], rating: 4.3 },
+            { id: '5SeriesProduct3', name: '5 Series - Chamber', image: chamber5, description: ['- 	Material : SS304/PTFE',<br/> ,'- Bush : Sic / TC' , <br/> ,'- Inner dia:  16mm/ 17.5mm'], rating: 4.6 },
+            { id: '5SeriesProduct4', name: '5 Series - Impeller', image: Impller5, description: ['- Material: SS304/PTFE',<br/> ,'- Suitable for: MVC5 , CR5 , CDL5' , <br/> ,'- Outer Dia : 110mm'], rating: 4.7 },
         ],
-        "Chamber stack": [
-            { id: '3SeriesProduct1', name: 'Chamber Stack - 2 Series', image: 'src/assets/images/vet/Chamber Stack - 2 Series.png', description: 'The 2 Series Chamber Stack is designed for compact efficiency, facilitating optimal fluid dynamics in tight spaces. Its durable construction ensures reliability and longevity in various applications', rating: 4.4 },
-            { id: '3SeriesProduct2', name: 'Chamber Stack - 4 Series', image: 'src/assets/images/vet/Chamber Stack - 4 Series.png', description: 'Featuring an advanced design for enhanced performance, the 4 Series Chamber Stack maximizes flow efficiency and stability. Built with high-quality materials, it withstands demanding conditions while delivering consistent results', rating: 4.2 },
-        ],
-        "Pump Spares": [
-            { id: '3SeriesProduct1', name: 'Pump Spare - Coupling Top Chamber', image: 'src/assets/images/vet/Pump Spare - Coupling Top Chamber.png', description: 'The Coupling Top Chamber is engineered to provide secure connections between components, ensuring efficient power transmission. Its robust design minimizes wear and enhances overall system reliability', rating: 4.4 },
-            { id: '3SeriesProduct2', name: 'Pump Spare - Lock Washer', image: 'src/assets/images/vet/Pump Spare - Lock Washer.png', description: 'The Lock Washer offers secure fastening to prevent loosening under vibration and stress, ensuring optimal performance in pump systems. Its durable material guarantees long-lasting service in demanding environments', rating: 4.2 },
-            { id: '3SeriesProduct3', name: 'Pump Spare - Mechanical Seal', image: 'src/assets/images/vet/Pump Spare - Mechanical Seal.png', description: 'The Mechanical Seal provides a leak-proof barrier between rotating and stationary parts, protecting against fluid loss. Designed for high efficiency, it enhances the longevity of pump systems', rating: 4.8 },
-            { id: '3SeriesProduct4', name: 'Pump Spare - Shaft', image: 'src/assets/images/vet/Pump Spare - Shaft.png', description: 'The Shaft is precision-engineered for optimal power transfer and durability in various pumping applications. Its robust construction minimizes the risk of failure, ensuring smooth operation', rating: 4.9 },
-            { id: '3SeriesProduct4', name: 'Pump Spare - Sleeves', image: 'src/assets/images/vet/Pump Spare - Sleeves.png', description: 'The Sleeves are designed to protect and enhance the life of the shaft while allowing for smooth operation within the pump. Made from high-quality materials, they offer excellent resistance to wear', rating: 4.9 },
-            { id: '3SeriesProduct4', name: 'Pump Spare - Stopper', image: 'src/assets/images/vet/Pump Spare - Stopper.png', description: 'The Stopper provides essential functionality by preventing fluid backflow and maintaining system integrity. Its reliable design ensures effective operation in various pumping scenarios', rating: 4.9 },
-            { id: '3SeriesProduct4', name: 'Pump Spare - TC Bush', image: 'src/assets/images/vet/Pump Spare - TC Bush.png', description: 'The TC Bush serves as a crucial component for stabilizing and supporting rotating elements within the pump. Its durable construction ensures longevity and consistent performance in challenging conditions', rating: 4.9 },
-        ]
+    
+    "Chamber Stack": [
+        { id: 'ChamberStackProduct1', name: 'Chamber Stack - 2 Series', image: chamberstack2 , description: ['- Material: SS304( SS316 On request)',<br/> ,'- Available for:  2/11, 2/13, 2/15 , 2/18 and 2/22 ' , <br/> ,'- Bush : Sic/ TC',<br/>,'- Rated flow : 2m3/Hr'], rating: 4.5 },
+        { id: 'ChamberStackProduct2', name: 'Chamber Stack - 4 Series ', image: chamberstack4, description:  ['- Material: SS304( SS316 On request)',<br/> ,'- Available for:  4/12, 4/16, 4/22  ' , <br/> ,'- Bush : Sic/ TC',<br/>,'- Rated flow : 4m3/Hr'], rating: 4.2 },
+    ],
+    "Pump Spares": [
+        { id: 'PumpSpare1', name: 'Pump Spare - Coupling Top Chamber', image: coupling , description: ['- Suitable for:  2 , 3 , 4 and 5 series Pumps  ',<br/> ,'- 	Fitted with drive pin and Screws  ' , <br/> ,'- Rugged Construction'], rating: 4.7 },
+        { id: 'PumpSpare2', name: 'Pump Spare - Lock Washer', image: pumpSpare2, description: ['- Suitable for:  2 , 3 and 4 series  ',<br/> ,'- Length :  21mm( 22mm)  ' , <br/> ,'- Outer Dia : 128mm'], rating: 4.6 },
+        { id: 'PumpSpare3', name: 'Pump Spare - Mechanical Seal', image: pumpSpare3, description: ['- Material : Sic/ Sic  Or TC/TC ',<br/> ,'- 	Available for :12mm and 16mm Shafts  ' , <br/> ,'- Cartridge Type '], rating: 4.5 },
+        { id: 'PumpSpare4', name: 'Pump Spare - Shaft', image: pumpSpare4, description:['- Material: SS304 ',<br/> ,'- 	Available  for: MVC AND CDL Models  ' , <br/> ,'- Size : Dia 12.5 X 10A/F '], rating: 4.4 },
+        { id: 'PumpSpare5', name: 'Pump Spare -  Sleeves', image: pumpSpare5, description: ['- Material: SS304 ',<br/> ,'- Outer dia : 15mm and 17mm    ' , <br/> ,'- Length : 4mm to 26mm '], rating: 4.3 },
+        { id: 'PumpSpare6', name: 'Pump Spare - Stopper', image: pumpSpare6, description:  ['- Material: SS304 ',<br/> ,'- Suitable for:  Double D shafts ' , <br/> ,'- Preciously wire cut to avoid slip '], rating: 4.2 },
+        { id: 'PumpSpare7', name: 'Pump Spare - TC Bush', image: pumpSpare7, description: ['- Material: Tungsten Carbide ',<br/> ,'- 	Length : 11mm' , <br/> ,'- Outer dia:  16mm and 17.5mm' ,<br/>,'- Suitable for Double D , Spline and Hex Shafts'], rating: 4.1 },
+      
+    ]
     },
     "4 inch SS Submersible spares": {
         "2 Series": [
-            { id: '2SeriesProduct1', name: '2 Series - bottom', image: 'src/assets/images/four/2Series-Bottom.jpg', description: 'The 2 Series Bottom Chamber is designed for optimal performance, made from high-grade stainless steel to withstand harsh conditions. Its precision engineering ensures efficient fluid dynamics and minimal energy loss', rating: 4.5 },
-            { id: '2SeriesProduct2', name: '2 Series - Chamber', image: 'src/assets/images/four/2 Series - Chamber.png', description: 'The 2 Series Chamber is constructed with durable stainless steel, providing strength and reliability for various pumping applications. Its design facilitates effective fluid movement, enhancing overall system efficiency', rating: 4.3 },
-            { id: '2SeriesProduct2', name: '2 Series - Impeller ', image: 'src/assets/images/four/2 Series - Impeller.png', description: 'The 2 Series Impeller features a high-efficiency design that promotes effective fluid transfer. Made from premium stainless steel, it offers excellent performance and durability, even in challenging environments', rating: 4.3 }
+            { id: '2SeriesProduct1', name: '2 Series - bottom', image: fourcham2  , description: ['- Material: SS304( SS316 On request)',<br/> ,'- 	Suitable for:  Keyway type  , Hex shafts   ' , <br/> ,'- Outer dia : 73mm',<br/>,'- Rated flow : 2m3/Hr'], rating: 4.5 },
+            { id: '2SeriesProduct2', name: '2 Series - Chamber', image:fourimp2 , description: ['- Material: SS304/Nitrile Rubber/PTFE',<br/> ,'- Length :  22mm' , <br/> ,'- Outer Dia : 87mm '], rating: 4.3 },
+            { id: '2SeriesProduct2', name: '2 Series - Impeller ', image:fourbottom2 , description: ['- Material: SS304/Nitrile Rubber/PTFE',<br/> ,'- 	Suitable for: SP2, SP3, SP5' , <br/> ,'- 	Outer Dia : 87mm'], rating: 4.3 }
         ],
         "3 Series": [
-            { id: '3SeriesProduct1', name: '3 Series - Bottom', image: 'src/assets/images/four/3 Series - Bottom.png', description: 'The 3 Series Bottom Chamber is expertly crafted from high-quality stainless steel, ensuring long-lasting durability and resistance to wear. Its design optimizes fluid flow, making it perfect for various pumping applications', rating: 4.4 },
-            { id: '3SeriesProduct2', name: '3 Series - Chamber', image: 'src/assets/images/four/3 Series - Chamber.png', description: 'The 3 Series Chamber offers robust construction with a focus on efficiency and performance. Made from premium stainless steel, it enhances fluid dynamics, reducing energy consumption while maximizing output', rating: 4.2 },
-            { id: '3SeriesProduct2', name: '3 Series - Impeller', image: 'src/assets/images/four/3 Series - Impeller.png', description: 'The 3 Series Impeller is engineered for high performance, featuring a streamlined design that enhances fluid movement. Crafted from durable stainless steel, it ensures reliable operation and longevity in demanding environments', rating: 4.2 }
+            { id: '34SeriesProduct1', name: '3 Series - Bottom', image:  fourcham3, description: ['- Material: SS304( SS316 On request)',<br/> ,'- 	Suitable for:  Keyway type  , Hex shafts' , <br/> ,'- 	Outer Dia : 73mm',<br/>,'- Rated flow : 3m3/Hr'], rating: 4.4 },
+            { id: '34SeriesProduct2', name: '3 Series - Chamber', image: fourimp3, description: ['- Material: SS304/Nitrile Rubber/PTFE',<br/> ,'- 	Length :  22mm' , <br/> ,'- Outer Dia : 87mm'], rating: 4.2 },
+            { id: '34SeriesProduct2', name: '3 Series - Impeller', image: fourbottom3, description: [' - Material: SS304/Nitrile Rubber/PTFE', <br/> ,'- Suitable for: SP2, SP3, SP5' , <br/> ,'- 	Outer Dia : 87mm'], rating: 4.2 }
         
         ],
         "5 Series": [
-            { id: '3SeriesProduct1', name: '5 Series - Bottom', image: 'src/assets/images/four/5 Series - Bottom.png', description: 'The 5 Series Bearing Chamber is engineered for durability and reliability, ensuring optimal performance in high-load applications. Its robust construction minimizes wear and enhances operational lifespan', rating: 4.4 },
-            { id: '3SeriesProduct2', name: '5 Series - Chamber', image: 'src/assets/images/four/5 Series - Chamber.png', description: 'The 5 Series Bottom Chamber is crafted from high-quality materials to provide exceptional strength and stability. Its design ensures efficient fluid flow, reducing turbulence and energy consumption', rating: 4.2 },
-            { id: '3SeriesProduct2', name: '5 Series - Impeller', image: 'src/assets/images/four/5 Series - Impeller.png', description: 'The 5 Series Impeller is designed for maximum efficiency and performance in fluid transfer applications. Its innovative shape, made from premium materials, ensures optimal flow rates and reduced operational noise', rating: 4.2 },
+            { id: '5SeriesProduct1', name: '5 Series - Bottom', image:fourcham5 , description: ['- 	Material: SS304( SS316 On request)',<br/> ,'- Suitable for:  Keyway type  , Hex shafts' , <br/> ,'- Outer Dia : 73mm',<br/>,'- Rated flow : 5m3/Hr'], rating: 4.4 },
+            { id: '5SeriesProduct2', name: '5 Series - Chamber', image:fourimp5 , description: ['- 	Material: SS304/Nitrile Rubber/PTFE',<br/> ,'- 	Length :  22mm' , <br/> ,'- Outer Dia : 87mm'], rating: 4.2 },
+            { id: '5SeriesProduct2', name: '5 Series - Impeller', image: fourbottom5, description: ['- Material: SS304/Nitrile Rubber/PTFE', <br/> ,'- Suitable for: SP2, SP3, SP5' , <br/> ,'- Outer Dia : 87mm'], rating: 4.2 },
         
         ]
     },
     topSellers: [
-        { id: '3SeriesProduct2', name: '5 Series - Chamber', image: 'src/assets/images/four/5 Series - Chamber.png', description: 'The 5 Series Bottom Chamber is crafted from high-quality materials to provide exceptional strength and stability. Its design ensures efficient fluid flow, reducing turbulence and energy consumption', rating: 4.2 },
-        { id: '3SeriesProduct4', name: 'Pump Spare - Shaft', image: 'src/assets/images/vet/Pump Spare - Shaft.png', description: 'The Shaft is precision-engineered for optimal power transfer and durability in various pumping applications. Its robust construction minimizes the risk of failure, ensuring smooth operation', rating: 4.9 },
-        { id: '3SeriesProduct4', name: 'Pump Spare - Sleeves', image: 'src/assets/images/vet/Pump Spare - Sleeves.png', description: 'The Sleeves are designed to protect and enhance the life of the shaft while allowing for smooth operation within the pump. Made from high-quality materials, they offer excellent resistance to wear', rating: 4.9 },
-        { id: '3SeriesProduct2', name: 'Chamber Stack - 4 Series', image: 'src/assets/images/vet/Chamber Stack - 4 Series.png', description: 'Featuring an advanced design for enhanced performance, the 4 Series Chamber Stack maximizes flow efficiency and stability. Built with high-quality materials, it withstands demanding conditions while delivering consistent results', rating: 4.2 },   
+        { id: '3tSeriesProduct2', name: '5 Series - Chamber', image: fourcham5, description:  ['- 	Material : SS304/PTFE',<br/> ,'- Bush : Sic / TC' , <br/> ,'- Inner dia:  16mm/ 17.5mm'], rating: 4.2 },
+        { id: '3tiSeriesProduct4', name: 'Pump Spare - Shaft', image: pumpSpare4, description: ['- Material: SS304 ',<br/> ,'- 	Available  for: MVC AND CDL Models  ' , <br/> ,'- Size : Dia 12.5 X 10A/F '], rating: 4.9 },
+        { id: '3toSeriesProduct4', name: 'Pump Spare - Sleeves', image:pumpSpare5 , description:['- Material: SS304 ',<br/> ,'- Outer dia : 15mm and 17mm    ' , <br/> ,'- Length : 4mm to 26mm '] , rating: 4.9 },
+        { id: '3thSeriesProduct2', name: 'Chamber Stack - 4 Series', image:chamberstack4 , description: ['- Material: SS304( SS316 On request)',<br/> ,'- Available for:  4/12, 4/16, 4/22  ' , <br/> ,'- Bush : Sic/ TC',<br/>,'- Rated flow : 4m3/Hr'], rating: 4.2 },   
     ]
 };
 
@@ -77,6 +127,7 @@ const Products = () => {
     const [showPopup, setShowPopup] = useState(false);
     const [popupProduct, setPopupProduct] = useState(null);
     const [formData, setFormData] = useState({ name: '', phone: '', message: '' });
+    const [productReviews, setProductReviews] = useState({}); // Track individual product ratings
 
     const handleCategoryClick = (category) => {
         setSelectedCategory(category);
@@ -89,7 +140,7 @@ const Products = () => {
 
     const handleGetQuote = (product) => {
         setPopupProduct(product);
-        setFormData({ name: '', phone: '', message: '' }); // Reset form data
+        setFormData({ name: '', phone: '', message: '' });
         setShowPopup(true);
     };
 
@@ -99,10 +150,18 @@ const Products = () => {
     };
 
     const handleSubmit = () => {
-        const whatsappUrl = `https://wa.me/+919787715155?text=Interested in ${popupProduct.name}. Name: ${formData.name}, Phone: ${formData.phone}, Message: ${formData.message}`;
+        const whatsappUrl = `https://wa.me/+918300101155?text=Interested in ${popupProduct.name}. Name: ${formData.name}, Phone: ${formData.phone}, Message: ${formData.message}`;
         window.open(whatsappUrl, '_blank');
         setShowPopup(false);
     };
+
+    const handleStarClick = (productId, star) => {
+        setProductReviews((prevReviews) => ({
+            ...prevReviews,
+            [productId]: { rating: star, isReviewed: true }
+        }));
+    };
+
     return (
         <div className="products-page">
             <h2>Our Products</h2>
@@ -140,13 +199,40 @@ const Products = () => {
                                 <button className='get-quote-button' onClick={() => handleGetQuote(product)}>
                                     <FaWhatsapp /> Get a Quote
                                 </button>
+                                
+                                {/* Star Rating */}
+                                <div className="star-rating">
+                                    {[1, 2, 3, 4, 5].map((star) => (
+                                        <span
+                                            key={star}
+                                            onClick={() => handleStarClick(product.id, star)}
+                                            style={{
+                                                cursor: 'pointer',
+                                                color: star <= (productReviews[product.id]?.rating || 0) ? 'gold' : 'gray'
+                                            }}
+                                        >
+                                            ★
+                                        </span>
+                                    ))}
+                                </div>
+                                {productReviews[product.id]?.isReviewed && <p>Thank you for the review!</p>}
                             </div>
                         </div>
                     ))}
-                    <button className="back-to-set" onClick={() => setSelectedSeries(null)}>Back to Series</button>
+                    <button
+  className="back-to-set"
+  onClick={() => {
+    setSelectedSeries(null);
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top smoothly
+  }}
+>
+  Back to Series
+</button>
+
                 </div>
             )}
-              <div className="top-sellers">
+
+            <div className="top-sellers">
                 <h3>Top Sellers</h3>
                 <div className="top-seller-list">
                     {productsData.topSellers.map((product) => (
@@ -159,12 +245,28 @@ const Products = () => {
                                 <button onClick={() => handleGetQuote(product)}>
                                     <FaWhatsapp /> Get a Quote
                                 </button>
+                                
+                                {/* Star Rating */}
+                                <div className="star-rating">
+                                    {[1, 2, 3, 4, 5].map((star) => (
+                                        <span
+                                            key={star}
+                                            onClick={() => handleStarClick(product.id, star)}
+                                            style={{
+                                                cursor: 'pointer',
+                                                color: star <= (productReviews[product.id]?.rating || 0) ? 'gold' : 'gray'
+                                            }}
+                                        >
+                                            ★
+                                        </span>
+                                    ))}
+                                </div>
+                                {productReviews[product.id]?.isReviewed && <p>Thank you for the review!</p>}
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
-
 
             {showPopup && (
                 <div className="popup-overlay">

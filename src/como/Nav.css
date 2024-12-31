@@ -1,28 +1,34 @@
-
+/* Base styling for all elements */
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
+/* Navbar container styling */
 .nav {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    background-color:hwb(182 13% 51%);
-    padding: 15px; 
+    background-color: hwb(182 13% 51%);
+    padding: 15px;
 }
-.ima{
+
+/* Logo image styling */
+.ima {
     border-radius: 15px;
-    width: 90px
-}
-.ima1{
-    width: 390px;
-    height: 70px;
-    margin-left:380px;
+    width: 90px;
+    margin-right: 50px
 }
 
+/* Banner or secondary logo styling */
+.ima1 {
+    width: 250px; /* Reduce width for better fit */
+    height: 60px;
+    margin-left: 20px;
+}
 
-
+/* Company name styling */
 .company-name {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
@@ -32,16 +38,16 @@
     text-transform: uppercase;
 }
 
+/* Navbar title styling */
 .nav h1 {
     flex: 1;
-  
     font-weight: 400;
     font-style: normal;
     text-align: center; 
-    
-    margin-left: 300px; 
+    margin: 0; /* Remove extra margin */
 }
 
+/* Navbar links container */
 .nav ul {
     list-style-type: none; 
     padding: 10px; 
@@ -49,56 +55,96 @@
     display: flex; 
 }
 
+/* Navbar link items */
 .nav ul li {
-    margin: 0 15px; 
+    margin: 0 15px;
 }
 
+/* Navbar link styling */
 .nav ul li a {
     color: white; 
     padding: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none; 
     font-weight: bold; 
-    transition: color 0.3s; 
+    transition: color 0.3s;
 }
 
+/* Navbar link hover effect */
 .nav ul li a:hover {
     color: #217b7e; 
     background-color: white;
     border-radius: 10px;
 }
 
-
+/* Mobile layout */
 @media (max-width: 768px) {
+    
     .nav {
         flex-direction: column; 
-        align-items: flex-start;
-        padding: 10px; 
+        align-items: center; /* Center items */
+        padding: 10px;
+        width: 100%;
     }
-    .ima1{
-      margin-left: 30px;
+
+    .ima {
+        margin-left: auto;
+        margin-right: auto; /* Center the logo */
     }
-    
+
+    .ima1 {
+        width: 200px; /* Smaller size for mobile */
+        margin-left: 0; /* Remove left margin */
+    }
 
     .nav h1 {
-        margin-left: 0;
-        margin-bottom: 10px; 
+        font-size: 1.5em;
+        margin-bottom: 10px;
     }
 
     .nav ul {
-        flex-direction: column; 
-        width: 100%; 
-        align-items: center; 
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
         padding: 0;
     }
 
     .nav ul li {
-        margin: 5px 0; 
+        margin: 5px 0;
     }
 
     .nav ul li a {
         width: 100%;
         text-align: center;
-        padding: 10px 0;
+        padding: 8px 0;
+    }
+}
+
+/* Compact layout for larger screens (1400px and above) */
+@media (min-width: 1400px) {
+    .nav {
+        padding: 10px 20px; /* Less padding for a compact look */
+    }
+
+    .company-name {
+        font-size: 2.2em; /* Slightly smaller font size */
+    }
+
+    .ima1 {
+        width: 300px; /* Reduce image width */
+        margin-left: 250px; /* Center more */
+    }
+
+    .nav h1 {
+        margin-left: 200px; /* Adjust to be more compact */
+    }
+
+    .nav ul li {
+        margin: 0 10px; /* Reduce spacing between items */
+    }
+
+    .nav ul li a {
+        padding: 8px; /* Smaller padding for compact appearance */
+        font-size: 0.95em; /* Slightly smaller font */
     }
 }

@@ -67,7 +67,7 @@
     padding: 15px;
     width: 600px;
     height: auto;
-    max-width: 100%;
+
 }
 
 .product-item:hover {
@@ -100,6 +100,13 @@
     color: #666;
 }
 
+/* Place the star-rating above the Get a Quote button */
+.star-rating {
+   position: relative;
+   left: 4px;
+   bottom: 100px;
+}
+
 .product-details button {
     display: inline-flex;
     align-items: center;
@@ -107,11 +114,11 @@
     color: white;
     border: none;
     border-radius: 4px;
-    margin-top: 30px;
-    margin-left: 90px;
+    margin-top: 50px; /* Adjust this margin if needed */
     padding: 15px 12px;
     font-size: 0.9rem;
     cursor: pointer;
+    margin-left: 110px;
     transition: background-color 0.2s ease; /* Reduced duration */
 }
 
@@ -190,6 +197,7 @@
     background-color: #0056b3;
     transform: scale(1.05);
 }
+
 .contact-buttons {
     position: fixed;
     bottom: 20px;
@@ -249,6 +257,7 @@
         transform: translateY(0);
     }
 }
+
 /* Media Query for Tablets (width between 768px and 1024px) */
 @media (max-width: 1024px) {
     .products-page h2 {
@@ -329,7 +338,7 @@
     }
 
     .product-details button {
-        margin-left: 110px;
+        margin-left: 90px;
         padding: 10px 8px;
         font-size: 0.85rem;
     }
@@ -340,49 +349,17 @@
     }
 
     .back-to-set, .back-to-categories {
-        padding: 8px 14px;
         font-size: 0.85rem;
-        margin-top: 15px;
     }
-    .get-quote-button {
-        margin-bottom: 40px;
+
+    .contact-buttons {
+        bottom: 10px;
+        right: 10px;
+        gap: 10px;
     }
-}/* Media Query for Tablets (width between 768px and 1024px) */
-@media (max-width: 1024px) {
-    .popup-box {
-        padding: 25px;
-        max-width: 350px;
-        width: 90%;
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
-    }
+    .star-rating {
+        position: relative;
+        left: 4px;
+        bottom: 80px;
+     }
 }
-
-/* Media Query for Mobile Phones (width 767px and below) */
-@media (max-width: 767px) {
-    .popup-box {
-        padding: 15px;
-        max-width: 260px;
-        width: 85%;
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .popup-box h4 {
-        font-size: 1rem;
-        margin-bottom: 8px;
-    }
-
-    .popup-box input,
-    .popup-box textarea {
-        padding: 8px;
-        width: 200px;
-        font-size: 0.9rem;
-    }
-
-    .popup-box button {
-        font-size: 0.85rem;
-        margin-right: 20px;
-        padding: 8px 12px;
-        margin-left: 0;
-    }
-}
-

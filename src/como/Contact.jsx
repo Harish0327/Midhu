@@ -84,10 +84,10 @@ const Contact = () => {
             <div className="links-container">
                 <h4>Connect with Us</h4><br />
                 <div className="social-links">
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/profile.php?id=61567910507185" target="_blank" rel="noopener noreferrer">
                         <FaFacebook className="icon" size={30} />
                     </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://x.com/MidhuI79631" target="_blank" rel="noopener noreferrer">
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" 
                             width="30" 
@@ -98,10 +98,10 @@ const Contact = () => {
                             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.29 13.89l-1.41 1.41L12 13.41l-2.88 2.88-1.41-1.41L10.59 12 7.71 9.12l1.41-1.41L12 10.59l2.88-2.88 1.41 1.41L13.41 12l2.88 2.88z"/>
                         </svg>
                     </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/midhuindustries/" target="_blank" rel="noopener noreferrer">
                         <FaInstagram className="icon" size={30} />
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/midhu-industries-06b835337/" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin className="icon" size={30} />
                     </a>
                 </div>

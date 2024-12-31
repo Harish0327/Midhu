@@ -13,10 +13,13 @@
 .footer-content {
     max-width: 1200px; 
     margin: 0 auto;
+    color: white;
 }
 
 .footer p {
+    color: white;
     margin: 5px 0;
+    font-size: larger;
 }
 
 .address {
@@ -58,4 +61,5 @@
     .social-icon {
         font-size: 24px;
 }
+
 }
