@@ -5,8 +5,8 @@ import './Nav.css';
 export default function Nav() {
     return (
         <div className='nav'>
-            <img className='ima' src="src\assets\images\WhatsApp Image 2024-10-30 at 11.42.48_72141968.jpg" alt="Midhu Industries" />
-            <img className='ima1' src="src\assets\images\Midhu_logobg.png" alt="" />
+            <img className='ima' src="public/WhatsApp Image 2024-10-30 at 11.42.48_72141968.jpg" alt="Midhu Industries" />
+            <img className='ima1' src="public/midhu_logobg.png" alt="" />
             
             <ul>
                 <li><Link to="/">Home</Link></li>

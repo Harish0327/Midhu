@@ -106,7 +106,7 @@ const Home = () => {
                 </div>
                 <div className="image-container">
                     <img 
-                        src="src/assets/images/metal-worker-teaching-trainee-machine-use_441990-7959.jpg" 
+                        src="src\assets\metal-worker-teaching-trainee-machine-use_441990-7959.jpg" 
                         alt="Steel Manufacturing" 
                         className={`animated-image ${isVisible ? 'slideInFromRight' : ''}`} 
                     />
